@@ -1,0 +1,425 @@
+:root{
+    --mainColor:rgb(89, 161, 228);
+}
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    font-size: 13px;
+    text-transform: capitalize;
+}
+/******************** GLOBAL STYLING ********************************/
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+section{
+    padding: 40px 0;
+}
+/******************** /GLOBAL STYLING ********************************/
+/******************** HEADER STYLING ********************************/
+header{
+    background-image: url(../img/linked-systems-sliders-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%
+}
+.navbar-1{
+    background-color: rgb(255, 253, 253);
+    border-bottom: 1px solid grey;
+    height: 40px;
+}
+.row .contact{
+    display: flex;
+    width:80%;
+    margin: 10px 0;
+
+}
+.row .contact span{
+    color: rgb(175, 173, 173);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.row .contact p{
+    display: inline-block;
+    font-weight: normal;
+}
+.row .icons{
+    width: 20%;
+    margin: 3px 0;
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;    
+}
+.row .icons i{
+    padding: 10px;
+    color: rgb(175, 173, 173);
+    font-size: 18px;
+}
+
+.row .icons span i{
+    
+    color: rgb(173, 173, 173);
+    font-size: 15px;
+}
+.navbar-2{
+    background-color: rgb(255, 253, 253);
+}
+.row .img{
+    display: flex;
+    width: 35%;  
+}
+.row .img img{
+    width: 60%;
+}
+.row .list{
+    display: flex;
+    justify-content: flex-end;
+    width: 65%;
+}
+ul li a{
+    display: inline-block;
+    transition: 0.7s;
+    padding: 23px 15px;  
+}
+.row .list  li a.fixed,
+.row .list  li:hover a {
+    background-color: var(--mainColor);
+    color: white;
+}
+ul li a.fixed {
+    color: white
+}
+
+ul.list span{
+    height:62px;
+    width: 35px;
+    background-color: rgb(15, 15, 68);
+    text-align: center;
+}
+ul.list span i{
+    color: white;
+    line-height: 60px;
+}
+
+.header-content{
+    padding: 100px 0;
+}
+.header-content .page-contact h1{
+    color: #fff;
+    font-size: 4rem
+}
+.header-content .border-line{
+    background-color: cyan;
+    height: 2px;
+    width: 190px;
+    margin: 10px 0;
+    position: relative;
+}
+.header-content .border-line::after{
+    background-color: cyan;
+    height: 5px;
+    width: 45%;
+    right: 0;
+    top: 0;
+    content: "";
+    position: absolute;
+}
+.header-content .page-contact p{
+    font-size: 17px;
+    color: rgb(59, 58, 58);
+    line-height: 25px;
+    margin: 20px 0;
+    color: white;
+}
+/* ***************** /HEADER STYLING *********************** */
+/* ***************** /SECTION STYLING *********************** */
+#services{
+    background-color: #eee;
+}
+#services .item{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    background-color: white;
+    margin: 15px 0;
+}
+#services .item .icon-arrow{
+    background-color: #70d8d8;
+    height: 50px;
+    width: 50px;
+    color: white;
+    text-align: center;
+    margin-right: 20px;
+}
+#services .item .icon-arrow i{
+    font-size: 25px;
+    line-height: 50px
+}
+#services .item .icon-information h4{
+    font-size: 1.2rem;
+    margin: 6px 0;
+}
+#services .item .icon-information p{
+    font-size: 1.1rem
+}
+
+
+/* ***************** /SECTION STYLING *********************** */
+/* ***************** SECTION STYLING *********************** */
+section.blue{
+    background-color: rgba(21, 31, 66, 0.932);
+    padding: 60px 0 20px;
+    display: flex;
+    
+}
+#rows{
+    display: flex;
+    justify-content: flex-start;
+}
+.blue .end-logo{
+    width: 23.333333%;
+    margin-right: 60px;
+}
+.blue .end-logo img{
+    width: 70%;
+    margin-bottom: 25px;
+}
+.blue .end-logo p{
+    color: rgb(243, 241, 241);
+    line-height: 20px;
+}
+.blue .company-info{
+    width: 23.3333333%;
+    margin-right: 60px;
+}
+.blue .company-info h4{
+    color: rgb(233, 232, 232);
+    font-size: 20px;
+    font-weight: normal;
+    padding: 20px 0;
+    position: relative;
+}
+.blue .company-info h4::after{
+    position: absolute;
+    content: "";
+    border: 1px rgb(243, 242, 242) solid;
+    width: 80%;
+    top:60px;
+    left: 0;
+}
+
+.blue .company-info ul{
+    padding: 20px 0;
+}
+.blue .company-info ul li{
+    list-style-type: square ;
+    color: rgb(243, 242, 242);
+    margin-bottom: 25px;
+    margin-left: 13px;
+    position: relative;
+}
+.blue .company-info ul li::after{
+    content: "";
+    border: 1px rgb(243, 242, 242) solid;
+    width: 80%;
+    position: absolute;
+    top:25px;
+    left: 0;
+}
+.pc{
+    width: 23.33333%;
+    margin-right: 60px;
+}
+.pc img{
+    margin-bottom: 60px;
+    width: 70%;
+}
+.pc-input input{
+    padding: 15px; 
+}
+.pc-input{
+    position: relative;
+    width: 200px;
+}
+.pc-input span{
+    display: inline-block;
+    background-color: var(--mainColor);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.pc-input span i{
+    line-height: 50px;
+    color: white;
+
+}
+.after{
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(179, 179, 179);
+    margin: 60px 0 10px;
+}
+.after span{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: inline-block;
+    background-color: var(--mainColor);
+    text-align: center;
+    top: -25px;
+    right: 0;
+    
+}
+.after i{
+    line-height: 49px;
+    color: white;
+    font-size: 20px;
+}
+.par-end {
+    width: 100%
+}
+.par-end p{
+    text-align: center;
+    color: white;
+}
+/* ***************** /SECTION STYLING *********************** */
+/******************** SCREEN STYLING ********************************/ 
+@media (max-width: 991px){
+    .header-content .page-contact {
+        width: 45%;
+    }
+    .logo-content {
+        width: 40%;
+    }
+    .row .f-item {
+        width: 100%;
+    }
+    .connect .border div {
+        left: 41%;
+    }
+}
+@media (max-width: 770px){
+    .blue .company-info h4::after {
+        left: 0;
+    }
+    .blue .end-logo {
+        width: 85%;
+        margin: 32px 0;
+    }
+    .blue .company-info {
+        width: 40%;
+        margin-right: 60px;
+    }
+    .pc img {
+        width: 100%;
+        margin: 25px;
+    }
+    .row .img {
+        width: 35%;
+        margin: 0 auto;
+    }
+    .row .img img {
+        width: 90%;
+    }
+    .row .list {
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .navbar-2 ul span{
+        width: 62px;
+    }
+    .navbar-2 ul li a{
+        padding: 23px 6px;
+    }
+    html{
+        width: auto!important;
+    }
+}
+@media (max-width: 590px){
+    .logo-content {
+        width: 48%;
+    }
+    .row .img img {
+        width: 103%;
+    }
+    .row .f-item div {
+        background-color: rgb(60, 60, 110);
+        text-align: center;
+        line-height: 150px;
+        padding: 69px 231px;
+        margin: 15px 0;
+    }
+}
+@media (max-width: 450px){
+    .navbar-1{
+        display: none;
+    }
+    html{
+        width: min-content;
+    }
+    .header-content .page-contact {
+        width: 100%;
+    }
+    .header-content .page-contact input {
+        background-color: rgb(14, 81, 168);
+        padding: 15px 20px;
+        color: white;
+        border-radius: 5px;
+        margin: 20px 0;
+    }
+    .logo-content {
+        width: 100%;
+    }
+    .centering{
+        text-align: center!important;
+    }
+    .pc {
+        width: 51%;
+        margin: 0 auto
+    }
+    .blue .company-info {
+        width: 51%;
+        margin: 0 auto;
+    }
+    .blue .end-logo {
+        width: 85%;
+        margin: 30px auto;
+    }
+    .blue .end-logo p {
+        line-height: 26px;
+        font-size: 1.4rem;
+    }
+    .row .f-item div {
+        padding: 63px 168px;
+        margin: 15px 0;
+    }
+    .pc-input {
+        position: relative;
+        width: 185px;
+    }
+}
+/******************** /SCREEN STYLING ********************************/ 
